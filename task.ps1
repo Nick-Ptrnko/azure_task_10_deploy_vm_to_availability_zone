@@ -1,5 +1,5 @@
 $location = "southafricanorth"
-$resourceGroupName = "mate-azure-task-10"
+$resourceGroupName = "mate-resources"
 $networkSecurityGroupName = "defaultnsg"
 $virtualNetworkName = "vnet"
 $subnetName = "default"
@@ -22,7 +22,8 @@ $sshKeyPublicKey = Get-Content $sshKeyPath -Raw
 
 $vmName = "matebox"
 $vmImage = "Ubuntu2204"
-$vmSize = "Standard_B2as_v2"
+#$vmSize = "Standard_B2as_v2"
+$vmSize = "Standard_B1s"
 
 Write-Host "Creating a resource group $resourceGroupName ..."
 New-AzResourceGroup -Name $resourceGroupName -Location $location
